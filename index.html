@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek-Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <script src="script.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/A-icons8-a-64.png" type="image/x-icon">
+
+    <style>
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: #f1f1f100;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: #88888800;
+        }
+
+        body::-webkit-scrollbar-thumb:hover {
+            background: #55555500;
+        }
+
+    </style>
+
+</head>
+
+<body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white p-4" style="background: linear-gradient(to bottom, #cc66ff 22%, #6600ff 100%);">
+
+
+
+    <nav class="w-full fixed top-0 px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-70">
+        <h1 ><span class=" text-1.5xl  rounded-lg px-4 py-2 p-4 " style="background: linear-gradient(to bottom, #cc66ff 22%, #ff99cc 100%);">ABHISHEK KUMAR SINGH</h1>
+
+        <ul 
+            class="hidden md:flex ml-4 items-center gap-6 lg:gap-8 rounded-full px-12 py-3  shadow-sm  font-Ovo dark:border dark:border-white/50 dark:bg-transparent p-4" style="background: linear-gradient(to bottom, #cc66ff 22%, #ff99cc 100%);">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button onclick="toggleTheme()">
+
+            </button>
+
+            <a href="tel:8130228729" class="bg-black text-white px-4 py-2 rounded-lg p-4" style="background: linear-gradient(to bottom, #cc66ff 22%, #ff99cc 100%);">Call Me</a>
+
+            <button class="block md:hidden ml-3" onclick="openmenu()">
+
+            </button>
+
+        </div>
+
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
+
+            <div class="absolute right-6 top-6" onclick="closemenu()">
+                <img src="./images/close-black.png" class="w-5 cursor-pointer dark:hidden">
+                <img src="./images/close-white.png" class="w-5 cursor-pointer hidden dark:block">
+            </div>
+
+            <li><a href="#top" onclick="closemenu()">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About me</a></li>
+            <li><a href="#services" onclick="closemenu()">Services</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+
+        <h3 class="flex items-end gap-2 text-xml md:text-2xl mb-3 font-Ovo text-white  rounded-lg px-4 py-2">Hello! In next few minutes you will know
+            about me and my work </h3>
+        <span class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Web Developer , Product Manager &amp; Business
+            consultant
+        </span>
+        <p class=" mx-auto font-Ovo text-white text-base">I am a MERN stack developer skilled in web development, product
+            management, and creating user-centric, scalable digital solutions
+        </p>
+
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+             <a href="https://drive.google.com/file/d/1QFHbBcskr55sTqLae9nE7Zj7Xy4qqwsd/view?usp=drive_link"
+                target="_blank" download
+                class="px-10 py-3  rounded-full  flex items-center gap-2 bg-white dark:text-black p-4" style="background: linear-gradient(to bottom, #cc66ff 22%, #ff99cc 100%);"> Download 
+                resume<img src="arrow.png" class="w-4"></a>
+        </div>
+    </div>
+
+
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+       
+        <h2 class="text-center text-5xl font-Ovo rounded-lg bg-black text-white">About me</h2>
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+           
+            <div class="flex-1">
+
+                <p class="mb-10 max-w-2xl font-Ovo">
+                    I am Abhishek Kumar Singh, an experienced MERN stack developer with a strong command of web
+                    development technologies. Alongside my
+                    technical expertise, I have over a year of experience in product management, where I've honed my
+                    skills in strategizing, developing, and optimizing digital products. Additionally, my background in
+                    business consulting allows me to bridge the gap between technology and business objectives, ensuring
+                    impactful and user-centric solutions. Passionate about innovation and continuous learning, I thrive
+                    on building scalable applications and driving product success.
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl">
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">HTML, CSS, JavaScript, MongoDB,
+                            ExpressJs, ReactJs, NodeJs , Tailwind , GA-4 , 
+                            Wordpress, NoSql, UI/UX</p>
+                    </li>
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        
+
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">B.Tech- Software
+                            Engineering (DELHI TECHNOLOGICAL UNIVERSITY)</p>
+                    </li>
+                    
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        
+
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Experience</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">Over 1 year of experience as a Product and Project Manager.</p>
+                    </li>
+                </ul>
+              
+                
+
+                
+                
+            </div>
+            <div class="flex-1 flex justify-center">
+                <img src="Picture.jpg" alt="Abhishek Kumar Singh" class="w-full max-w-md rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h2 class="text-center text-5xl font-Ovo">Services</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Offering responsive web design and development services, Product development , Business consulting
+            specializing in creating Great products with Technical knowledge in Web Development and then connecting that knowledge with business growth experience of mine of more than 1 year.</p>
+        <div class="grid grid-cols-auto gap-6 my-10">
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web Development</h3>
+                <p class="texxt-sm text-gray-600 leading-5 dark:text-white/80"> Experience in Web development of more than 3 years.</p>
+                <a href="#contact" class="flex items-center gap-2 text-sm mt-5">Reach out</a>
+            </div>
+
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Product Management</h3>
+                <p class="texxt-sm text-gray-600 leading-5 dark:text-white/80">Experience in Product management of more than 1 year.</p>
+                <a href="#contact" class="flex items-center gap-2 text-sm mt-5">Reach out</a>
+            </div>
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Business consulting</h3>
+                <p class="texxt-sm text-gray-600 leading-5 dark:text-white/80">Experience in Business consulting of more than 1 year</p>
+                <a href="#contact" class="flex items-center gap-2 text-sm mt-5">Reach out</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div id="contact"
+        class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
+        <h2 class="text-center text-5xl font-Ovo">Let's Connect </h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Reach out for collaborations, inquiries, or just to connect—let's chat!</p>
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto">
+
+            <input type="hidden" name="access_key" value="b9d682c8-079d-45ea-b8a4-72222b195241">
+
+            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter Your name"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+                    required name="name">
+
+                <input type="email" placeholder="Enter Your email"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+                    required name="email">
+                
+                <input type="number" placeholder="Enter Your Mobile No"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+                    required name="number">
+            </div>
+            <textarea rows="6" name="message" placeholder="Enter your message"
+                class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"
+                required></textarea>
+
+            <button
+                class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">Submit
+                now
+            </button>
+        </form>
+    </div>
+
+
+    <div class="mt-20">
+        <div class="text-center">
+
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <a href="mailto:yourname@example.com">Email Me</a>
+            </div>
+        </div>
+
+        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6"
+            style="display: flex; justify-content: center; align-items: center;">
+            <p> &copy; 2025 Abhishek Kumar Singh- All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
